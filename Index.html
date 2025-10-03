@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sumaiya Dharsi — Portfolio</title>
+  <meta name="description" content="Portfolio of Sumaiya Dharsi, Mechanical Engineering & Design @ Northeastern University" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0c10;          /* near-black */
+      --card:#111218;        /* deep gray */
+      --text:#e9edf1;        /* off-white */
+      --muted:#aeb7c2;       /* muted text */
+      --brand:#7cc5ff;       /* accent */
+      --brand-2:#b5f0d0;     /* secondary accent */
+      --ring:rgba(124,197,255,.35);
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+    }
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--text); background:radial-gradient(1200px 800px at 80% -10%, rgba(124,197,255,.06), transparent 60%), radial-gradient(900px 600px at -10% 20%, rgba(181,240,208,.05), transparent 60%), var(--bg);
+      line-height:1.6;
+    }
+    a{color:var(--brand); text-decoration:none}
+    a:hover{ text-decoration:underline }
+    .container{ width:min(1100px, 92%); margin-inline:auto }
+    header{
+      position:sticky; top:0; backdrop-filter:saturate(1.4) blur(8px); background:rgba(11,12,16,.6); border-bottom:1px solid rgba(255,255,255,.06); z-index:50
+    }
+    .nav{ display:flex; align-items:center; justify-content:space-between; padding:14px 0 }
+    .logo{ font-weight:800; letter-spacing:.4px }
+    .logo b{ color:var(--brand) }
+    .nav a{ color:var(--text); opacity:.9; margin-left:18px }
+    .btn{ display:inline-block; background:linear-gradient(135deg,var(--brand),var(--brand-2)); color:#0a0b0f; font-weight:700; padding:10px 16px; border-radius:999px; box-shadow:var(--shadow); border:0 }
+
+    .hero{ display:grid; grid-template-columns:1.2fr .8fr; gap:28px; padding:52px 0 22px }
+    .card{ background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.06); border-radius:var(--radius); box-shadow:var(--shadow) }
+    .card.pad{ padding:28px }
+    .eyebrow{ color:var(--brand); font-weight:700; letter-spacing:.08em; text-transform:uppercase; font-size:.78rem }
+    h1{ font-size:clamp(28px, 4vw, 44px); line-height:1.18; margin:6px 0 10px }
+    .subtitle{ color:var(--muted); font-size:1.02rem }
+    .info{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin-top:16px }
+    .info div{ background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.06); border-radius:12px; padding:12px 14px }
+    .info b{ display:block; font-size:.78rem; color:var(--muted); font-weight:600 }
+    .info span{ font-weight:600 }
+
+    .links{ display:flex; gap:12px; margin-top:18px; flex-wrap:wrap }
+    .tag{ border:1px solid rgba(255,255,255,.12); padding:7px 12px; border-radius:999px; color:var(--text); background:rgba(255,255,255,.03) }
+
+    .headshot{ display:grid; place-items:center; }
+    .headshot .ph{ width:100%; aspect-ratio:1/1; border-radius:16px; background:linear-gradient(135deg, rgba(124,197,255,.18), rgba(181,240,208,.18)); border:1px dashed rgba(255,255,255,.25); display:grid; place-items:center; color:#0a0b0f; font-weight:800 }
+    .headshot small{ color:var(--muted) }
+
+    section{ padding:28px 0 }
+    .section-title{ font-size:1.4rem; margin:14px 0 10px }
+    .projects{ display:grid; grid-template-columns:repeat(12,1fr); gap:18px }
+    .project{ grid-column:span 12; display:grid; grid-template-columns:1fr 1.3fr; gap:18px; align-items:stretch }
+    .project-media{ background:#0f1117; border:1px solid rgba(255,255,255,.06); border-radius:14px; aspect-ratio:16/10; display:grid; place-items:center; overflow:hidden }
+    .project-media img{ width:100%; height:100%; object-fit:cover }
+    .project-body{ background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.06); border-radius:14px; padding:18px }
+    .proj-eyebrow{ color:var(--brand); font-weight:700; letter-spacing:.06em; text-transform:uppercase; font-size:.75rem }
+    .project h3{ margin:6px 0 6px }
+    .bullets{ margin:10px 0 0; padding-left:18px }
+    .bullets li{ margin:6px 0 }
+
+    .grid-3{ display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:14px }
+    .pill{ padding:9px 12px; border-radius:999px; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.08); text-align:center; font-weight:600 }
+
+    footer{ padding:36px 0 64px; color:var(--muted) }
+
+    @media (max-width: 920px){
+      .hero{ grid-template-columns:1fr; }
+      .project{ grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">Sumaiya <b>Dharsi</b></div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="btn" style="margin-left:16px">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="card pad">
+        <div class="eyebrow">Mechanical Engineering & Design</div>
+        <h1>Hi, I’m <span style="color:var(--brand)">Sumaiya</span> — a sophomore at Northeastern building playful, human-centered projects.</h1>
+        <p class="subtitle">I merge software, electronics, and fabrication to design approachable learning experiences and practical systems. I’m currently preparing for <b>Spring 2026 co‑op</b> applications and open to roles in mechanical design, mechatronics, or product development.</p>
+
+        <div class="info">
+          <div><b>Location</b><span>Boston, MA</span></div>
+          <div><b>Email</b><span><a href="mailto:Dharsi.s@northeastern.edu">Dharsi.s@northeastern.edu</a></span></div>
+          <div><b>Phone</b><span><a href="tel:+14078180131">(407) 818‑0131</a></span></div>
+          <div><b>LinkedIn</b><span><a href="https://www.linkedin.com/in/sumaiyadharsi" target="_blank" rel="noopener">linkedin.com/in/sumaiyadharsi</a></span></div>
+        </div>
+        <div class="links">
+          <a class="tag" href="#projects">View projects</a>
+          <a class="tag" href="#skills">Core skills</a>
+          <a class="tag" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="headshot">
+        <!-- Replace the placeholder box with an actual headshot image (square) -->
+        <div class="ph card" aria-label="Headshot placeholder"><span style="opacity:.9">Add headshot<br> 1200×1200</span></div>
+        <small>Drop an image into <code>.headshot .ph</code> or replace with <code><img src="images/headshot.jpg" alt="Sumaiya Dharsi"/></code>.</small>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="section-title">About</h2>
+      <div class="card pad">
+        <p>At Northeastern, I split my time between studio courses and hands‑on builds that use code, CAD, and fabrication. I enjoy translating complex ideas into playful, tangible experiences—often through sensors, LEDs, and rapid‑prototyped parts.</p>
+        <p>Tools I’ve been using: <b>SolidWorks</b>, <b>Arduino</b>, <b>C++</b>, <b>laser cutting</b>, and collaborative design workflows.</p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects">
+        <!-- PROJECT 1: Wreck‑It Ralph: Building Disaster -->
+        <article class="project">
+          <div class="project-media">
+            <!-- Replace with project image(s) -->
+            <img src="images/wreck-it-ralph-cover.jpg" alt="Wreck-It Ralph: Building Disaster – interactive educational game" onerror="this.outerHTML='\u003cdiv style=\'padding:18px; text-align:center; color:var(--muted)\'\u003eAdd project image at images/wreck-it-ralph-cover.jpg\u003c/div\u003e'">
+          </div>
+          <div class="project-body">
+            <div class="proj-eyebrow">Cornerstone of Engineering Project</div>
+            <h3>Wreck‑It Ralph: Building Disaster</h3>
+            <p><b>What:</b> Designed and built an interactive educational game to introduce children to structural engineering through storytelling and hands‑on challenges.</p>
+            <p><b>How:</b></p>
+            <ul class="bullets">
+              <li>Integrated <b>C++</b> for logic, <b>Arduino</b> for sensors/LEDs, <b>SolidWorks</b> for CAD, and <b>laser cutting</b> for physical components.</li>
+              <li>Worked in a collaborative team, splitting coding, fabrication, and design while keeping a cohesive user experience.</li>
+              <li>Built level mini‑projects: trivia for recall, circuit‑building for applied problem‑solving, and puzzles for critical thinking.</li>
+            </ul>
+            <p><b>Result:</b> Delivered a fully functional, engaging game that taught engineering concepts across interactive levels while strengthening cross‑disciplinary collaboration and communication.</p>
+            <div class="links" style="margin-top:12px">
+              <!-- Optional: link to video, repo, or PDF case study -->
+              <!-- <a class="tag" href="projects/wreck-it-ralph-case-study.pdf">Case Study (PDF)</a> -->
+            </div>
+          </div>
+        </article>
+
+        <!-- TEMPLATE: Duplicate this block for more projects -->
+        <!--
+        <article class="project">
+          <div class="project-media">
+            <img src="images/PROJECT-COVER.jpg" alt="PROJECT TITLE cover">
+          </div>
+          <div class="project-body">
+            <div class="proj-eyebrow">Course / Role</div>
+            <h3>PROJECT TITLE</h3>
+            <p><b>What:</b> One‑line purpose of the project.</p>
+            <p><b>How:</b></p>
+            <ul class="bullets">
+              <li>Key technique or tool used…</li>
+              <li>Another highlight…</li>
+              <li>Impactful detail…</li>
+            </ul>
+            <p><b>Result:</b> Measurable or qualitative outcome.</p>
+          </div>
+        </article>
+        -->
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="grid-3">
+        <div class="card pad">
+          <h3 style="margin-top:0">Mechanical & CAD</h3>
+          <div class="links">
+            <span class="pill">SolidWorks</span>
+            <span class="pill">Laser Cutting</span>
+            <span class="pill">Rapid Prototyping</span>
+            <span class="pill">DFM Basics</span>
+          </div>
+        </div>
+        <div class="card pad">
+          <h3 style="margin-top:0">Electronics & Code</h3>
+          <div class="links">
+            <span class="pill">Arduino</span>
+            <span class="pill">C/C++</span>
+            <span class="pill">Sensors & LEDs</span>
+            <span class="pill">Serial/IO</span>
+          </div>
+        </div>
+        <div class="card pad">
+          <h3 style="margin-top:0">Collaboration</h3>
+          <div class="links">
+            <span class="pill">Team Projects</span>
+            <span class="pill">Prototyping Sprints</span>
+            <span class="pill">User Testing</span>
+            <span class="pill">Presentation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2 class="section-title">Get in touch</h2>
+      <div class="card pad">
+        <p>Want to chat about a co‑op or project? Reach out via email or LinkedIn. I’m happy to share work samples and iterate on ideas.</p>
+        <div class="links">
+          <a class="btn" href="mailto:Dharsi.s@northeastern.edu">Email Sumaiya</a>
+          <a class="tag" href="https://www.linkedin.com/in/sumaiyadharsi" target="_blank" rel="noopener">LinkedIn</a>
+          <button class="tag" id="copyEmail" type="button">Copy email</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        © <span id="year"></span> Sumaiya Dharsi • Built with HTML/CSS • Boston, MA
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Smooth scroll for in‑page anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id = a.getAttribute('href');
+        const el = document.querySelector(id);
+        if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
+      });
+    });
+
+    // Copy email helper
+    const btn = document.getElementById('copyEmail');
+    if(btn){
+      btn.addEventListener('click', ()=>{
+        const email = 'Dharsi.s@northeastern.edu';
+        navigator.clipboard.writeText(email).then(()=>{
+          const prev = btn.textContent; btn.textContent = 'Copied!';
+          setTimeout(()=>btn.textContent = prev, 1200);
+        });
+      });
+    }
+
+    // Year footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

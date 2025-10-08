@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-
 <body>
   <header>
     <div class="container nav">
@@ -27,57 +26,54 @@
   </header>
 
   <main class="container">
-  <!-- HERO (full-bleed) -->
-<section class="hero hero-fullbleed">
-  <div class="card pad">
-    <div class="eyebrow">Mechanical Engineering & Design</div>
-    <h1>Hi, I’m <span class="accent">Sumaiya</span> — a sophomore at Northeastern building playful, human-centered projects.</h1>
-    <p class="subtitle">I merge software, electronics, and fabrication to design approachable learning experiences and practical systems. I’m currently preparing for <b>Spring 2026 co-op</b> applications and open to roles in mechanical design, mechatronics, or product development.</p>
+    <!-- HERO (full-bleed) -->
+    <section class="hero hero-fullbleed">
+      <div class="card pad">
+        <div class="eyebrow">Mechanical Engineering & Design</div>
+        <h1>Hi, I’m <span class="accent">Sumaiya</span> — a sophomore at Northeastern building playful, human-centered projects.</h1>
+        <p class="subtitle">I merge software, electronics, and fabrication to design approachable learning experiences and practical systems. I’m currently preparing for <b>Spring 2026 co-op</b> applications and open to roles in mechanical design, mechatronics, or product development.</p>
 
-    <div class="info">
-      <div><b>Location</b><span>Boston, MA</span></div>
-      <div><b>Email</b><span><a href="mailto:Dharsi.s@northeastern.edu">Dharsi.s@northeastern.edu</a></span></div>
-      <div><b>Phone</b><span><a href="tel:+14078180131">(407) 818-0131</a></span></div>
-      <div><b>LinkedIn</b><span><a href="https://www.linkedin.com/in/sumaiyadharsi" target="_blank" rel="noopener">linkedin.com/in/sumaiyadharsi</a></span></div>
-    </div>
-    <div class="links">
-      <a class="tag" href="#projects">View projects</a>
-      <a class="tag" href="#skills">Core skills</a>
-      <a class="tag" href="#contact">Get in touch</a>
-    </div>
-  </div>
-</section>
+        <div class="info">
+          <div><b>Location</b><span>Boston, MA</span></div>
+          <div><b>Email</b><span><a href="mailto:Dharsi.s@northeastern.edu">Dharsi.s@northeastern.edu</a></span></div>
+          <div><b>Phone</b><span><a href="tel:+14078180131">(407) 818-0131</a></span></div>
+          <div><b>LinkedIn</b><span><a href="https://www.linkedin.com/in/sumaiyadharsi" target="_blank" rel="noopener">linkedin.com/in/sumaiyadharsi</a></span></div>
+        </div>
+        <div class="links">
+          <a class="tag" href="#projects">View projects</a>
+          <a class="tag" href="#skills">Core skills</a>
+          <a class="tag" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
 
+    <!-- ABOUT + HEADSHOT side by side -->
+    <section id="about" class="about-grid">
+      <div class="about-card card pad">
+        <h2 class="section-title">About</h2>
+        <p>At Northeastern, I split my time between studio courses and hands-on builds that use code, CAD, and fabrication. I enjoy translating complex ideas into playful, tangible experiences—often through sensors, LEDs, and rapid-prototyped parts.</p>
+        <p>Tools I’ve been using: <b>SolidWorks</b>, <b>Arduino</b>, <b>C++</b>, <b>laser cutting</b>, and collaborative design workflows.</p>
+      </div>
 
-  <!-- ABOUT + HEADSHOT side by side -->
-<section id="about" class="about-grid">
-  <div class="about-card card pad">
-    <h2 class="section-title">About</h2>
-    <p>At Northeastern, I split my time between studio courses and hands-on builds that use code, CAD, and fabrication. I enjoy translating complex ideas into playful, tangible experiences—often through sensors, LEDs, and rapid-prototyped parts.</p>
-    <p>Tools I’ve been using: <b>SolidWorks</b>, <b>Arduino</b>, <b>C++</b>, <b>laser cutting</b>, and collaborative design workflows.</p>
-  </div>
+      <figure class="about-photo">
+        <img src="Pics/Headshot.jpeg" alt="Sumaiya Dharsi headshot">
+      </figure>
+    </section>
 
-  <figure class="about-photo">
-    <img src="Pics/Headshot.jpeg" alt="Sumaiya Dharsi headshot">
-  </figure>
-</section>
-
-
-    <!-- PROJECTS (moved everything here and removed resume-highlighted block) -->
+    <!-- PROJECTS -->
     <section id="projects">
       <h2 class="section-title">Projects</h2>
 
       <div class="projects">
-        <!-- PROJECT: Flexir (moved here from the old “Highlighted Projects” section) -->
-        <article class="project">
-          <!-- CAROUSEL (Flexir) -->
-<!-- GALLERY (Flexir) -->
-<div class="project-media gallery-2x2">
-  <figure><img src="Pics/Flexir1.jpeg" alt="Flexir - prototype on hand"></figure>
-  <figure><img src="Pics/Flexir2.jpeg" alt="Flexir - electronics and wiring"></figure>
-  <figure><img src="Pics/Flexir3.jpeg" alt="Flexir - 3D printed parts"></figure>
-  <figure><img src="Pics/Flexir4.jpeg" alt="Flexir - testing session"></figure>
-</div>
+        <!-- PROJECT: Flexir (images ABOVE description) -->
+        <article class="project project-stacked">
+          <div class="project-gallery gallery-row4">
+            <!-- Place images in /Pics or any folder; keep paths consistent -->
+            <figure><img src="Pics/Flexir1.jpeg" alt="Flexir – prototype on hand"></figure>
+            <figure><img src="Pics/Flexir2.jpeg" alt="Flexir – electronics and wiring"></figure>
+            <figure><img src="Pics/Flexir3.jpeg" alt="Flexir – 3D printed parts"></figure>
+            <figure><img src="Pics/Flexir4.jpeg" alt="Flexir – testing session"></figure>
+          </div>
 
           <div class="project-body">
             <div class="proj-eyebrow">Cornerstone of Engineering — Spring 2025</div>
@@ -90,16 +86,14 @@
           </div>
         </article>
 
-        <!-- PROJECT: Wreck-It Ralph: Building Disaster -->
-        <article class="project">
-          <!-- CAROUSEL (Wreck-It Ralph) -->
-<!-- GALLERY (Wreck-It Ralph) -->
-<div class="project-media gallery-2x2">
-  <figure><img src="Pics/Wreck1.jpeg" alt="Game build – room overview"></figure>
-  <figure><img src="Pics/Wreck2.jpeg" alt="Laser-cut parts"></figure>
-  <figure><img src="Pics/Wreck3.jpeg" alt="Arduino + LEDs"></figure>
-  <figure><img src="Pics/Wreck4.jpeg" alt="Kids playing the puzzle"></figure>
-</div>
+        <!-- PROJECT: Wreck-It Ralph (images ABOVE description) -->
+        <article class="project project-stacked">
+          <div class="project-gallery gallery-row4">
+            <figure><img src="Pics/Wreck1.jpeg" alt="Wreck-It Ralph – room overview"></figure>
+            <figure><img src="Pics/Wreck2.jpeg" alt="Wreck-It Ralph – laser-cut parts"></figure>
+            <figure><img src="Pics/Wreck3.jpeg" alt="Wreck-It Ralph – Arduino + LEDs"></figure>
+            <figure><img src="Pics/Wreck4.jpeg" alt="Wreck-It Ralph – playtest"></figure>
+          </div>
 
           <div class="project-body">
             <div class="proj-eyebrow">Cornerstone of Engineering Project</div>
@@ -114,8 +108,6 @@
             <p><b>Result:</b> Delivered a fully functional, engaging game that taught engineering concepts across interactive levels while strengthening cross-disciplinary collaboration and communication.</p>
           </div>
         </article>
-
-        <!-- NOTE: Tiffin project intentionally removed -->
       </div>
     </section>
 
@@ -154,7 +146,7 @@
       </div>
     </section>
 
-    <!-- RESUME (highlighted projects section removed) -->
+    <!-- RESUME -->
     <section id="resume">
       <h2 class="section-title">Resume</h2>
       <div class="card pad">
@@ -192,8 +184,6 @@
               <li>Produced custom apparel designs for 7+ clients using heat press and vinyl.</li>
               <li>Gained hands-on exposure to a professional design & production workflow.</li>
             </ul>
-
-
           </div>
 
           <div>
@@ -256,7 +246,7 @@
 
   <script>
     // Smooth scroll for in-page anchors
-    document.querySelectorAll('a[href^=\"#\"]').forEach(a=>{
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
       a.addEventListener('click', e=>{
         const id = a.getAttribute('href');
         const el = document.querySelector(id);
@@ -280,58 +270,4 @@
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
-<script>
-  // Lightweight, reusable carousel for any .carousel[data-carousel]
-  (function(){
-    const carousels = document.querySelectorAll('[data-carousel]');
-    carousels.forEach((c)=>{
-      const track = c.querySelector('.carousel-track');
-      const slides = Array.from(track.querySelectorAll('img'));
-      const prev = c.querySelector('.prev');
-      const next = c.querySelector('.next');
-      const dots = c.querySelector('.carousel-dots');
-
-      // Hide missing images (in case you haven't uploaded all yet)
-      const realSlides = slides.filter(img => img.style.display !== 'none');
-      if (realSlides.length === 0) { c.style.display = 'none'; return; }
-
-      let index = 0;
-
-      // Build dots
-      realSlides.forEach((_, i) => {
-        const b = document.createElement('button');
-        b.type = 'button';
-        b.setAttribute('aria-label', 'Go to slide ' + (i + 1));
-        if (i === 0) b.setAttribute('aria-current', 'true');
-        b.addEventListener('click', () => go(i));
-        dots.appendChild(b);
-      });
-
-      function updateDots(){
-        dots.querySelectorAll('button').forEach((b, i) => {
-          if (i === index) b.setAttribute('aria-current', 'true');
-          else b.removeAttribute('aria-current');
-        });
-      }
-
-      function go(i){
-        index = (i + realSlides.length) % realSlides.length;
-        track.scrollTo({ left: realSlides[index].offsetLeft, behavior: 'smooth' });
-        updateDots();
-      }
-
-      prev.addEventListener('click', () => go(index - 1));
-      next.addEventListener('click', () => go(index + 1));
-
-      // Keyboard support when focused inside carousel
-      c.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') go(index - 1);
-        if (e.key === 'ArrowRight') go(index + 1);
-      });
-
-      // Keep alignment on resize
-      window.addEventListener('resize', () => go(index));
-    });
-  })();
-</script>
 </html>

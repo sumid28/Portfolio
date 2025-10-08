@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
+
 <body>
   <header>
     <div class="container nav">
@@ -30,12 +32,12 @@
       <div class="card pad">
         <div class="eyebrow">Mechanical Engineering & Design</div>
         <h1>Hi, I’m <span class="accent">Sumaiya</span> — a sophomore at Northeastern building playful, human-centered projects.</h1>
-        <p class="subtitle">I merge software, electronics, and fabrication to design approachable learning experiences and practical systems. I’m currently preparing for <b>Spring 2026 co‑op</b> applications and open to roles in mechanical design, mechatronics, or product development.</p>
+        <p class="subtitle">I merge software, electronics, and fabrication to design approachable learning experiences and practical systems. I’m currently preparing for <b>Spring 2026 co-op</b> applications and open to roles in mechanical design, mechatronics, or product development.</p>
 
         <div class="info">
           <div><b>Location</b><span>Boston, MA</span></div>
           <div><b>Email</b><span><a href="mailto:Dharsi.s@northeastern.edu">Dharsi.s@northeastern.edu</a></span></div>
-          <div><b>Phone</b><span><a href="tel:+14078180131">(407) 818‑0131</a></span></div>
+          <div><b>Phone</b><span><a href="tel:+14078180131">(407) 818-0131</a></span></div>
           <div><b>LinkedIn</b><span><a href="https://www.linkedin.com/in/sumaiyadharsi" target="_blank" rel="noopener">linkedin.com/in/sumaiyadharsi</a></span></div>
         </div>
         <div class="links">
@@ -46,8 +48,7 @@
       </div>
       <div class="headshot">
         <!-- Replace the placeholder box with an actual headshot image (square) -->
-        <div class="ph card" aria-label="Headshot placeholder"><span class="ph-text">Add headshot<br> 1200×1200</span></div>
-        <small class="muted">Drop an image into <code>.headshot .ph</code> or replace with <code>&lt;img src="images/headshot.jpg" alt="Sumaiya Dharsi"/&gt;</code>.</small>
+        <figure> <img src="Pics/Headshot.jpeg" alt="Sumaiya Dharsi"> </figure>
       </div>
     </section>
 
@@ -55,35 +56,64 @@
     <section id="about">
       <h2 class="section-title">About</h2>
       <div class="card pad">
-        <p>At Northeastern, I split my time between studio courses and hands‑on builds that use code, CAD, and fabrication. I enjoy translating complex ideas into playful, tangible experiences—often through sensors, LEDs, and rapid‑prototyped parts.</p>
+        <p>At Northeastern, I split my time between studio courses and hands-on builds that use code, CAD, and fabrication. I enjoy translating complex ideas into playful, tangible experiences—often through sensors, LEDs, and rapid-prototyped parts.</p>
         <p>Tools I’ve been using: <b>SolidWorks</b>, <b>Arduino</b>, <b>C++</b>, <b>laser cutting</b>, and collaborative design workflows.</p>
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- PROJECTS (moved everything here and removed resume-highlighted block) -->
     <section id="projects">
       <h2 class="section-title">Projects</h2>
 
       <div class="projects">
-        <!-- PROJECT 1: Wreck‑It Ralph: Building Disaster -->
+        <!-- PROJECT: Flexir (moved here from the old “Highlighted Projects” section) -->
         <article class="project">
-          <div class="project-media">
-            <!-- Replace with project image(s) -->
-            <img src="images/wreck-it-ralph-cover.jpg" alt="Wreck-It Ralph: Building Disaster – interactive educational game" onerror="this.outerHTML='<div class=&quot;img-missing&quot;>Add project image at images/wreck-it-ralph-cover.jpg</div>'">
+          <!-- CAROUSEL (Flexir) -->
+<!-- GALLERY (Flexir) -->
+<div class="project-media gallery-2x2">
+  <figure><img src="Pics/Flexir1.jpeg" alt="Flexir - prototype on hand"></figure>
+  <figure><img src="Pics/Flexir2.jpeg" alt="Flexir - electronics and wiring"></figure>
+  <figure><img src="Pics/Flexir3.jpeg" alt="Flexir - 3D printed parts"></figure>
+  <figure><img src="Pics/Flexir4.jpeg" alt="Flexir - testing session"></figure>
+</div>
+
+          <div class="project-body">
+            <div class="proj-eyebrow">Cornerstone of Engineering — Spring 2025</div>
+            <h3>Flexir: Hand Physical Therapy Tool</h3>
+            <p><b>What:</b> Wearable rehabilitation device with 3D-printed components and integrated Arduino sensors to track hand mobility.</p>
+            <ul class="bullets">
+              <li>Modeled in SolidWorks; printed iterative parts for fit and comfort.</li>
+              <li>Collected data from sensors and analyzed 10 hand-movement tests in MATLAB to validate accuracy.</li>
+            </ul>
           </div>
+        </article>
+
+        <!-- PROJECT: Wreck-It Ralph: Building Disaster -->
+        <article class="project">
+          <!-- CAROUSEL (Wreck-It Ralph) -->
+<!-- GALLERY (Wreck-It Ralph) -->
+<div class="project-media gallery-2x2">
+  <figure><img src="Pics/Wreck1.jpeg" alt="Game build – room overview"></figure>
+  <figure><img src="Pics/Wreck2.jpeg" alt="Laser-cut parts"></figure>
+  <figure><img src="Pics/Wreck3.jpeg" alt="Arduino + LEDs"></figure>
+  <figure><img src="Pics/Wreck4.jpeg" alt="Kids playing the puzzle"></figure>
+</div>
+
           <div class="project-body">
             <div class="proj-eyebrow">Cornerstone of Engineering Project</div>
-            <h3>Wreck‑It Ralph: Building Disaster</h3>
-            <p><b>What:</b> Designed and built an interactive educational game to introduce children to structural engineering through storytelling and hands‑on challenges.</p>
+            <h3>Wreck-It Ralph: Building Disaster</h3>
+            <p><b>What:</b> Designed and built an interactive educational game to introduce children to structural engineering through storytelling and hands-on challenges.</p>
             <p><b>How:</b></p>
             <ul class="bullets">
               <li>Integrated <b>C++</b> for logic, <b>Arduino</b> for sensors/LEDs, <b>SolidWorks</b> for CAD, and <b>laser cutting</b> for physical components.</li>
               <li>Worked in a collaborative team, splitting coding, fabrication, and design while keeping a cohesive user experience.</li>
-              <li>Built level mini‑projects: trivia for recall, circuit‑building for applied problem‑solving, and puzzles for critical thinking.</li>
+              <li>Built level mini-projects: trivia for recall, circuit-building for applied problem-solving, and puzzles for critical thinking.</li>
             </ul>
-            <p><b>Result:</b> Delivered a fully functional, engaging game that taught engineering concepts across interactive levels while strengthening cross‑disciplinary collaboration and communication.</p>
+            <p><b>Result:</b> Delivered a fully functional, engaging game that taught engineering concepts across interactive levels while strengthening cross-disciplinary collaboration and communication.</p>
           </div>
         </article>
+
+        <!-- NOTE: Tiffin project intentionally removed -->
       </div>
     </section>
 
@@ -92,28 +122,29 @@
       <h2 class="section-title">Skills</h2>
       <div class="grid-3">
         <div class="card pad">
-          <h3 class="tight">Mechanical & CAD</h3>
+          <h3 class="tight">CAD & Mechanics</h3>
           <div class="links">
             <span class="pill">SolidWorks</span>
             <span class="pill">Laser Cutting</span>
             <span class="pill">Rapid Prototyping</span>
-            <span class="pill">DFM Basics</span>
+            <span class="pill">Arduino</span>
+            <span class="pill">3D Printing</span>
           </div>
         </div>
         <div class="card pad">
-          <h3 class="tight">Electronics & Code</h3>
+          <h3 class="tight">Programming Languages</h3>
           <div class="links">
-            <span class="pill">Arduino</span>
-            <span class="pill">C/C++</span>
-            <span class="pill">Sensors & LEDs</span>
-            <span class="pill">Serial/IO</span>
+            <span class="pill">C++</span>
+            <span class="pill">MATLAB</span>
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
           </div>
         </div>
         <div class="card pad">
           <h3 class="tight">Collaboration</h3>
           <div class="links">
             <span class="pill">Team Projects</span>
-            <span class="pill">Prototyping Sprints</span>
+            <span class="pill">Communication</span>
             <span class="pill">User Testing</span>
             <span class="pill">Presentation</span>
           </div>
@@ -121,7 +152,7 @@
       </div>
     </section>
 
-    <!-- RESUME -->
+    <!-- RESUME (highlighted projects section removed) -->
     <section id="resume">
       <h2 class="section-title">Resume</h2>
       <div class="card pad">
@@ -135,6 +166,12 @@
 
             <hr class="rule">
 
+            <h3 class="tight">Projects</h3>
+            <p class="line"><b>Redesigning Tiffin </b> — Personal Project (Fall 2025 to Present)</p>
+            <ul class="bullets">
+              <li>Redesigned a traditional multi-tier tiffin in SolidWorks to be microwave safe while preserving portability and stacking features, applying research and development methods to select materials, evaluate trade-offs, and optimize for safety and usability.</li>
+            </ul>
+
             <h3 class="tight">Experience</h3>
             <p class="line"><b>Office Assistant</b> — Northeastern University Department of Economics (Sep 2024 – Present)</p>
             <ul class="bullets">
@@ -142,17 +179,19 @@
               <li>Support daily operations: front desk assistance, visitor support, and inventory upkeep.</li>
             </ul>
 
+            <p class="line"><b>Volunteer, Coach & Player</b> — Umoja Outreach Foundation (Summers 2015 – Present)</p>
+            <ul class="bullets">
+              <li>Coached two U12 girls’ soccer teams to the semifinals and supported 3,000-person events.</li>
+              <li>Coordinated logistics for opening/closing ceremonies and tournament operations.</li>
+            </ul>
+            
             <p class="line"><b>Design Intern</b> — Digitech Printers, East Meadow, NY (Summer 2023)</p>
             <ul class="bullets">
               <li>Produced custom apparel designs for 7+ clients using heat press and vinyl.</li>
-              <li>Gained hands‑on exposure to a professional design & production workflow.</li>
+              <li>Gained hands-on exposure to a professional design & production workflow.</li>
             </ul>
 
-            <p class="line"><b>Volunteer, Coach & Player</b> — Umoja Outreach Foundation (Summers 2015 – Present)</p>
-            <ul class="bullets">
-              <li>Coached two U12 girls’ soccer teams to the semifinals and supported 3,000‑person events.</li>
-              <li>Coordinated logistics for opening/closing ceremonies and tournament operations.</li>
-            </ul>
+
           </div>
 
           <div>
@@ -190,41 +229,6 @@
             </div>
           </div>
         </div>
-
-        <hr class="rule">
-
-        <h3 class="tight">Highlighted Projects</h3>
-        <div class="projects resume-projects">
-          <article class="project">
-            <div class="project-media">
-              <img src="images/flexir-cover.jpg" alt="Flexir: Hand Physical Therapy Tool" onerror="this.outerHTML='<div class=&quot;img-missing&quot;>Add project image at images/flexir-cover.jpg</div>'">
-            </div>
-            <div class="project-body">
-              <div class="proj-eyebrow">Cornerstone of Engineering — Spring 2025</div>
-              <h3>Flexir: Hand Physical Therapy Tool</h3>
-              <p><b>What:</b> Wearable rehabilitation device with 3D‑printed components and integrated Arduino sensors to track hand mobility.</p>
-              <ul class="bullets">
-                <li>Modeled in SolidWorks; printed iterative parts for fit and comfort.</li>
-                <li>Collected data from sensors and analyzed 10 hand‑movement tests in MATLAB to validate accuracy.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="project-media">
-              <img src="images/tiffin-redesign-cover.jpg" alt="Redesigning Tiffin" onerror="this.outerHTML='<div class=&quot;img-missing&quot;>Add image at images/tiffin-redesign-cover.jpg</div>'">
-            </div>
-            <div class="project-body">
-              <div class="proj-eyebrow">Personal Project — Fall 2025 → Present</div>
-              <h3>Redesigning Tiffin</h3>
-              <p><b>What:</b> Microwave‑safe, multi‑tier tiffin concept preserving portability and stacking features.</p>
-              <ul class="bullets">
-                <li>Used SolidWorks to explore materials, geometry, and thermal constraints.</li>
-                <li>Applied R&D methods to evaluate trade‑offs and optimize for safety and usability.</li>
-              </ul>
-            </div>
-          </article>
-        </div>
       </div>
     </section>
 
@@ -232,7 +236,7 @@
     <section id="contact">
       <h2 class="section-title">Get in touch</h2>
       <div class="card pad">
-        <p>Want to chat about a co‑op or project? Reach out via email or LinkedIn. I’m happy to share work samples and iterate on ideas.</p>
+        <p>Want to chat about a co-op or project? Reach out via email or LinkedIn. I’m happy to share work samples and iterate on ideas.</p>
         <div class="links">
           <a class="btn" href="mailto:Dharsi.s@northeastern.edu">Email Sumaiya</a>
           <a class="tag" href="https://www.linkedin.com/in/sumaiyadharsi" target="_blank" rel="noopener">LinkedIn</a>
@@ -249,8 +253,8 @@
   </main>
 
   <script>
-    // Smooth scroll for in‑page anchors
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    // Smooth scroll for in-page anchors
+    document.querySelectorAll('a[href^=\"#\"]').forEach(a=>{
       a.addEventListener('click', e=>{
         const id = a.getAttribute('href');
         const el = document.querySelector(id);
@@ -274,4 +278,58 @@
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
+<script>
+  // Lightweight, reusable carousel for any .carousel[data-carousel]
+  (function(){
+    const carousels = document.querySelectorAll('[data-carousel]');
+    carousels.forEach((c)=>{
+      const track = c.querySelector('.carousel-track');
+      const slides = Array.from(track.querySelectorAll('img'));
+      const prev = c.querySelector('.prev');
+      const next = c.querySelector('.next');
+      const dots = c.querySelector('.carousel-dots');
+
+      // Hide missing images (in case you haven't uploaded all yet)
+      const realSlides = slides.filter(img => img.style.display !== 'none');
+      if (realSlides.length === 0) { c.style.display = 'none'; return; }
+
+      let index = 0;
+
+      // Build dots
+      realSlides.forEach((_, i) => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+        if (i === 0) b.setAttribute('aria-current', 'true');
+        b.addEventListener('click', () => go(i));
+        dots.appendChild(b);
+      });
+
+      function updateDots(){
+        dots.querySelectorAll('button').forEach((b, i) => {
+          if (i === index) b.setAttribute('aria-current', 'true');
+          else b.removeAttribute('aria-current');
+        });
+      }
+
+      function go(i){
+        index = (i + realSlides.length) % realSlides.length;
+        track.scrollTo({ left: realSlides[index].offsetLeft, behavior: 'smooth' });
+        updateDots();
+      }
+
+      prev.addEventListener('click', () => go(index - 1));
+      next.addEventListener('click', () => go(index + 1));
+
+      // Keyboard support when focused inside carousel
+      c.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') go(index - 1);
+        if (e.key === 'ArrowRight') go(index + 1);
+      });
+
+      // Keep alignment on resize
+      window.addEventListener('resize', () => go(index));
+    });
+  })();
+</script>
 </html>

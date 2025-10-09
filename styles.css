@@ -32,7 +32,7 @@ a{color:var(--brand); text-decoration:none}
 a:hover{text-decoration:underline}
 .container{ width:min(1100px, 92%); margin-inline:auto }
 section{ padding:28px 0 }
-.section-title{ font-size:1.4rem; margin:14px 0 10px }
+.section-title{ font-size:1.8rem; margin:14px 0 10px }
 .card{
   background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
   border:1px solid rgba(255,255,255,.06);
@@ -77,7 +77,9 @@ header{
   padding:52px 0 22px;
   display: block;
 }
-.hero-fullbleed .card{ width: min(1100px, 92%); margin-inline: auto; /* center the hero content */
+.hero-fullbleed .card{
+  width: min(1100px, 92%);
+  margin-inline: auto; /* center the hero content */
 }
 .eyebrow{ color:var(--brand); font-weight:700; letter-spacing:.08em; text-transform:uppercase; font-size:.78rem }
 h1{ font-size:clamp(28px, 4vw, 44px); line-height:1.18; margin:6px 0 10px }
@@ -114,15 +116,62 @@ h1{ font-size:clamp(28px, 4vw, 44px); line-height:1.18; margin:6px 0 10px }
 /* =========================================================
    PROJECTS
    ========================================================= */
-.projects{ display:grid; grid-template-columns:repeat(12,1fr); gap:18px }
-
-/* Stacked layout: 4 images above, text below */
-.project.project-stacked{
-  grid-column:span 12;
-  display:grid;
-  grid-template-columns:1fr;
-  gap:14px;
+/* Projects container = one full-width column (stacked bubbles) */
+.projects{
+  display: grid;
+  grid-template-columns: 1fr;  /* previously repeat(12,1fr) */
+  gap: 24px;                   /* space between the two project bubbles */
 }
+
+/* Project card: keep article clean; .card gives the bubble look */
+.project.project-stacked{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  background: none;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+/* Project card: let the .card provide the bubble look; keep article clean */
+.project.project-stacked{
+  display: grid;
+  grid-template-columns: 1fr;  /* images above, text below */
+  gap: 14px;
+
+  /* remove bubble styles that were here before */
+  background: none;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+/* 4-wide gallery row (unchanged, just here for clarity) */
+.project-gallery.gallery-row4{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  gap: 12px;
+}
+.project-gallery.gallery-row4 figure{
+  margin: 0;
+  position: relative;
+  aspect-ratio: 3 / 2;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #eee;  /* no border */
+}
+.project-gallery.gallery-row4 img{
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+}
+
+/* (optional) tighten padding inside each bubble a touch */
+.projects .card.pad { padding: 22px; }
+
+/* add breathing room between multiple projects */
+.projects .project-stacked{ margin-bottom: 18px; }
 
 /* 4-wide gallery row (evenly spaced, same height, no borders) */
 .project-gallery.gallery-row4{
@@ -132,18 +181,18 @@ h1{ font-size:clamp(28px, 4vw, 44px); line-height:1.18; margin:6px 0 10px }
 }
 .project-gallery.gallery-row4 figure{
   margin:0; position:relative; aspect-ratio:3 / 2; /* all equal height */
-  border-radius:5px; overflow:hidden; background:#eee; /* no border */
+  border-radius:8px; overflow:hidden; background:#eee; /* no border */
 }
 .project-gallery.gallery-row4 img{
   position:absolute; inset:0; width:100%; height:100%;
   object-fit:cover; object-position:center;
 }
 
-/* Project description card */
+/* Project description card (kept subtle inside bubble) */
 .project-body{
-  background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+  background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
   border:1px solid rgba(255,255,255,.06);
-  border-radius:14px; padding:18px;
+  border-radius:12px; padding:18px;
 }
 .proj-eyebrow{ color:var(--brand); font-weight:700; letter-spacing:.06em; text-transform:uppercase; font-size:.75rem }
 .project h3{ margin:6px 0 6px }

@@ -17,7 +17,7 @@
       <div class="logo">Sumaiya <b>Dharsi</b></div>
       <nav>
         <a href="#about">About</a>
-        <a href="projects.html">Projects</a>
+        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#resume">Resume</a>
         <a href="#contact" class="btn nav-cta">Contact</a>
@@ -25,13 +25,15 @@
     </div>
   </header>
 
+   <a href="paintings.html"><button>Painting Gallery</button></a>
+
   <main class="container">
     <!-- HERO (full-bleed) -->
     <section class="hero hero-fullbleed">
       <div class="card pad">
         <div class="eyebrow">Mechanical Engineering & Design</div>
         <h1>Hi, I’m <span class="accent">Sumaiya</span>! A sophmore at Northeastern passionate about creating thoughtful, human-centered projects.</h1>
-        <p class="subtitle">I am excited to merge software, electronics, and mechanics to design creative and useful projects. I’m currently working at <b>10Beauty</b> as a Mechanical Engineering co-op.</p>
+        <p class="subtitle">I am excited to merge software, electronics, and mechanics to design creative and useful projects. I’m currently preparing for <b>Spring 2026 co-op</b> applications and open to roles in product design, manufacturing, or product development.</p>
 
         <div class="info">
           <div><b>Location</b><span>Boston, MA</span></div>
@@ -49,7 +51,7 @@
     <section id="about" class="about-grid">
       <div class="about-card card pad">
         <h2 class="section-title">About</h2>
-        <p>At Northeastern, I split my time between studio courses and hands-on builds that use code, CAD, and fabrication. I enjoy translating complex ideas into playful, tangible experiences. Often through sensors, LEDs, and rapid-prototyped parts.</p>
+        <p>At Northeastern, I split my time between studio courses and hands-on builds that use code, CAD, and fabrication. I enjoy translating complex ideas into playful, tangible experiences—often through sensors, LEDs, and rapid-prototyped parts.</p>
         <p>Tools I’ve been using: <b>SolidWorks</b>, <b>Arduino</b>, <b>C++</b>, <b>laser cutting</b>, and collaborative design workflows.</p>
       </div>
 
@@ -58,37 +60,65 @@
       </figure>
     </section>
 
-    <!-- NEW: HUB CARDS BETWEEN ABOUT + RESUME -->
-    <section id="portfolio-hub" class="portfolio-hub">
-      <h2 class="section-title">Explore my work</h2>
-      <div class="portfolio-cards">
-        <!-- Engineering Projects -->
-        <a href="projects.html" class="portfolio-card">
-          <img src="Pics/Solidworks 3.png" alt="Engineering and design projects">
-          <div class="portfolio-overlay">
-            <span>Engineering Projects</span>
-          </div>
-        </a>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
 
-        <!-- Paintings -->
-        <a href="paintings.html" class="portfolio-card">
-          <img src="Pics/paintings-cover.jpg" alt="Paintings gallery">
-          <div class="portfolio-overlay">
-            <span>Paintings</span>
+      <div class="projects">
+        <!-- PROJECT: Flexir (images ABOVE description) -->
+         <div class="card pad">
+        <article class="project project-stacked">
+          <div class="project-body">
+            <div class="proj-eyebrow">Cornerstone of Engineering — Spring 2025</div>
+            <h3>Flexir: Hand Physical Therapy Tool</h3>
+            <p><b>What:</b> Designed a wearable rehabilitation device with 3D-printed components and integrated Arduino sensors to track hand mobility recovery.</p>
+             <p><b>How:</b></p>
+            <ul class="bullets">
+              <li>Modeled in SolidWorks and fabricated prototypes with 3D printing for comfort and durability.</li>
+              <li>Integrated Arduino flex sensors with MATLAB to collect and analyze motion data in real time.</li>
+              <li>Conducted 10 user tests to calibrate sensors, improve accuracy, and validate performance.</li>
+            </ul>
+            <p><b>Result:</b> Created a functional prototype that demonstrated measurable progress tracking for hand therapy while strengthening my skills in mechanical design, prototyping, and data integration.</p>
           </div>
-        </a>
 
-        <!-- Art & Crochet -->
-        <a href="art.html" class="portfolio-card">
-          <img src="Pics/FictionalObject1.jpeg" alt="Art gallery">
-          <div class="portfolio-overlay">
-            <span>ARTF 1250</span>
+          <div class="project-gallery gallery-row4">
+            <!-- Place images in /Pics or any folder; keep paths consistent -->
+            <figure><img src="Pics/Flexir1.jpeg" alt="Flexir – prototype on hand"></figure>
+            <figure><img src="Pics/Flexir2.jpeg" alt="Flexir – electronics and wiring"></figure>
+            <figure><img src="Pics/Flexir3.jpeg" alt="Flexir – 3D printed parts"></figure>
+            <figure><img src="Pics/Flexir6.jpeg" alt="Flexir – testing session"></figure>
           </div>
-        </a>
+
+          
+        </article>
+        </div>
+
+        <!-- PROJECT: Wreck-It Ralph (images ABOVE description) -->
+         <div class="card pad">
+        <article class="project project-stacked">
+
+          <div class="project-body">
+            <div class="proj-eyebrow">Cornerstone of Engineering Project</div>
+            <h3>Wreck-It Ralph: Building Disaster</h3>
+            <p><b>What:</b> Designed and built an interactive educational game to introduce children to structural engineering through storytelling and hands-on challenges.</p>
+            <p><b>How:</b></p>
+            <ul class="bullets">
+              <li>Integrated C++ for logic, Arduino for sensors/LEDs, SolidWorks for CAD, and laser cutting for physical components.</li>
+              <li>Worked in a collaborative team, splitting coding, fabrication, and design while keeping a cohesive user experience.</li>
+              <li>Built level mini-projects: trivia for recall, circuit-building for applied problem-solving, and puzzles for critical thinking.</li>
+            </ul>
+            <p><b>Result:</b> Delivered a fully functional, engaging game that taught engineering concepts across interactive levels while strengthening cross-disciplinary collaboration and communication.</p>
+          </div>
+          <div class="project-gallery gallery-row4">
+            <figure><img src="Pics/Wreck1.jpeg" alt="Wreck-It Ralph – room overview"></figure>
+            <figure><img src="Pics/Wreck2.jpeg" alt="Wreck-It Ralph – laser-cut parts"></figure>
+            <figure><img src="Pics/Wreck3.jpeg" alt="Wreck-It Ralph – Arduino + LEDs"></figure>
+            <figure><img src="Pics/Wreck4.jpeg" alt="Wreck-It Ralph – playtest"></figure>
+          </div>
+        </article>
+        </div>
       </div>
     </section>
-
-
 
     <!-- SKILLS -->
     <section id="skills">
@@ -125,8 +155,7 @@
       </div>
     </section>
 
-
-<!-- RESUME -->
+    <!-- RESUME -->
     <section id="resume">
       <h2 class="section-title">Resume</h2>
       <div class="card pad">
@@ -229,6 +258,7 @@
         </div>
       </div>
     </section>
+
     <footer>
       <div class="container">
         © <span id="year"></span> Sumaiya Dharsi • Built with HTML/CSS • Boston, MA

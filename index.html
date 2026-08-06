@@ -7,7 +7,7 @@
   <meta name="description" content="Portfolio of Sumaiya Dharsi, Mechanical Engineering & Design @ Northeastern University" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -16,22 +16,31 @@
     <div class="container nav">
       <div class="logo">Sumaiya <b>Dharsi</b></div>
       <nav>
-        <a href="index.html#about">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="projects.html">Projects</a>
-        <a href="paintings.html" class="active">Paintings</a>
+        <a href="paintings.html">Paintings</a>
         <a href="art.html">Art</a>
+        <a href="index.html#resume">Resume</a>
         <a href="index.html#contact" class="btn nav-cta">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <!-- HERO (full-bleed) -->
+    <!-- HERO (full-bleed, circular headshot) -->
     <section class="hero hero-fullbleed">
-      <div class="card pad">
-        <div class="eyebrow">Mechanical Engineering & Design</div>
-        <h1>Hi, I’m <span class="accent">Sumaiya</span>! A sophmore at Northeastern passionate about creating thoughtful, human-centered projects.</h1>
+      <div class="card pad hero-content">
+        <div class="hero-photo">
+          <img src="Pics/Headshot.jpeg" alt="Sumaiya Dharsi headshot">
+        </div>
+        <div class="eyebrow">Mechanical Engineering &amp; Design</div>
+        <h1>Hi, I’m <span class="accent">Sumaiya</span>! A junior at Northeastern passionate about creating thoughtful, human-centered projects.</h1>
         <p class="subtitle">I am excited to merge software, electronics, and mechanics to design creative and useful projects. I’m currently working at <b>10Beauty</b> as a Mechanical Engineering co-op.</p>
+
+        <div class="links hero-links">
+          <a class="btn" href="mailto:Dharsi.s@northeastern.edu">Get in touch</a>
+          <a class="btn btn-outline" href="projects.html">Explore projects</a>
+        </div>
 
         <div class="info">
           <div><b>Location</b><span>Boston, MA</span></div>
@@ -39,26 +48,19 @@
           <div><b>Phone</b><span><a href="tel:+14078180131">(407) 818-0131</a></span></div>
           <div><b>LinkedIn</b><span><a href="https://www.linkedin.com/in/sumaiyadharsi" target="_blank" rel="noopener">linkedin.com/in/sumaiyadharsi</a></span></div>
         </div>
-        <div class="links">
-          <a class="btn" href="mailto:Dharsi.s@northeastern.edu">Get in touch</a>
-        </div>
       </div>
     </section>
 
-    <!-- ABOUT + HEADSHOT side by side -->
-    <section id="about" class="about-grid">
+    <!-- ABOUT -->
+    <section id="about">
       <div class="about-card card pad">
         <h2 class="section-title">About</h2>
         <p>At Northeastern, I split my time between studio courses and hands-on builds that use code, CAD, and fabrication. I enjoy translating complex ideas into playful, tangible experiences. Often through sensors, LEDs, and rapid-prototyped parts.</p>
         <p>Tools I’ve been using: <b>SolidWorks</b>, <b>Arduino</b>, <b>C++</b>, <b>laser cutting</b>, and collaborative design workflows.</p>
       </div>
-
-      <figure class="about-photo">
-        <img src="Pics/Headshot.jpeg" alt="Sumaiya Dharsi headshot">
-      </figure>
     </section>
 
-    <!-- NEW: HUB CARDS BETWEEN ABOUT + RESUME -->
+    <!-- HUB CARDS -->
     <section id="portfolio-hub" class="portfolio-hub">
       <h2 class="section-title">Explore my work</h2>
       <div class="portfolio-cards">
@@ -79,15 +81,16 @@
         </a>
 
         <!-- Art & Crochet -->
-        <a href="Art.html" class="portfolio-card">
-          <img src="Pics/blue-matcha-1.jpg" alt="Art gallery">
+        <a href="art.html" class="portfolio-card">
+          <img src="Pics/Blue-Matcha-1.jpg" alt="Pottery and crochet gallery">
           <div class="portfolio-overlay">
             <span>Art Gallery</span>
           </div>
         </a>
 
+        <!-- ARTF 1250 class project -->
         <a href="ARTF1250.html" class="portfolio-card">
-          <img src="Pics/FinalMap1.png" alt="Art gallery">
+          <img src="Pics/FinalMap1.png" alt="ARTF 1250 final map project">
           <div class="portfolio-overlay">
             <span>ARTF 1250</span>
           </div>
@@ -95,20 +98,19 @@
       </div>
     </section>
 
-
-
     <!-- SKILLS -->
     <section id="skills">
       <h2 class="section-title">Skills</h2>
       <div class="grid-3">
         <div class="card pad">
-          <h3 class="tight">CAD & Mechanics</h3>
+          <h3 class="tight">CAD &amp; Mechanics</h3>
           <div class="links">
             <span class="pill">SolidWorks</span>
             <span class="pill">Laser Cutting</span>
             <span class="pill">Rapid Prototyping</span>
             <span class="pill">Arduino</span>
             <span class="pill">3D Printing</span>
+            <span class="pill">Microsoft Suite</span>
           </div>
         </div>
         <div class="card pad">
@@ -132,60 +134,60 @@
       </div>
     </section>
 
-
-<!-- RESUME -->
+    <!-- RESUME -->
     <section id="resume">
       <h2 class="section-title">Resume</h2>
       <div class="card pad">
         <div class="resume-grid">
           <div>
             <h3 class="tight">Education</h3>
-            <p class="line"><b>Northeastern University</b> — B.S. Mechanical Engineering & Design (Expected May 2028), GPA 3.49/4.00</p>
+            <p class="line"><b>Northeastern University, College of Engineering</b> — B.S. Mechanical Engineering and Design (Anticipated May 2028), GPA 3.5/4.00</p>
             <p class="muted">Boston, MA</p>
-            <p class="line"><b>Relevant Coursework:</b> Cornerstone of Engineering 1 & 2, Statics, Thermodynamics, Designing Interactive Experiences, Making with Forms</p>
+            <p class="line"><b>Relevant Coursework:</b> Cornerstone of Engineering 1 &amp; 2, Statics, Designing Interactive Experiences</p>
             <p class="line"><b>Associations:</b> Society of Women Engineers, Undergraduate South Asian Organization, Islamic Society (ISNU)</p>
+
+            <p class="line pad-top"><b>Lake Highland Preparatory School</b> — High School Diploma, May 2024, GPA 4.20/4.00</p>
+            <p class="muted">Orlando, FL</p>
 
             <hr class="rule">
 
             <h3 class="tight">Projects</h3>
-            <p class="line"><b>Redesigning Tiffin </b> — Personal Project (Fall 2025 to Present)</p>
+            <p class="line"><b>MatchaBot</b> — Personal Project (Spring 2026 to Present)</p>
             <ul class="bullets">
-              <li>Redesigned a traditional multi-tier tiffin to be microwave safe while preserving stacking and portability features, using SolidWorks for modeling and iterative prototyping.</li>
-              <li>Applied research and development methods, including user research and material analysis, to evaluate design trade-offs and optimize for safety, durability, and user convenience.</li>
+              <li>Engineered an automated matcha whisking device that replicates the traditional chasen’s zigzag motion, performing gear calculations and mechanical design to convert rotational motion into whisking action.</li>
+              <li>Integrated 3D-printed mechanisms with an Arduino microcontroller to control motion and achieve smooth, froth-free matcha.</li>
             </ul>
-          
-            <p class="line"><b>Flexir: Hand Physical Therapy Tool </b> — Cornerstone of Engineering Project (Spring 2025)</p>
+
+            <p class="line"><b>Flexir: Hand Physical Therapy Tool</b> — Cornerstone of Engineering Project (Spring 2025)</p>
             <ul class="bullets">
-              <li>Designed and prototyped a wearable rehabilitation device using SolidWorks and 3D printing, incorporating Arduino sensors to support hand mobility recovery.</li>
-              <li>Integrated sensors with MATLAB and Arduino to monitor patient progress during at-home therapy, enabling data sharing with healthcare providers.</li>
-              <li>Conducted and analyzed 10 hand-movement tests in MATLAB to validate sensor accuracy and functionality.</li>
+              <li>Designed and prototyped a wearable rehabilitation device in SolidWorks with 3D-printed components, integrating Arduino sensors to track hand mobility and share progress data through MATLAB.</li>
+              <li>Conducted and analyzed 10 hand-movement tests in MATLAB to validate sensor accuracy, refining functionality for at-home therapy use.</li>
             </ul>
-        
+
             <p class="line"><b>Wreck-It Ralph: Building Disaster</b> — Cornerstone of Engineering Project (Fall 2024)</p>
             <ul class="bullets">
               <li>Developed an interactive educational game using C++, Arduino, and laser-cut components to introduce children to structural engineering concepts.</li>
-              <li>Programmed an Arduino-based passcode system to unlock rooms and advance through game levels.</li>
-              <li>Conducted user experience testing, gathering feedback to refine gameplay and improve learning outcomes</li>
+              <li>Conducted user experience testing, gathering feedback to refine gameplay and improve learning outcomes.</li>
               <li>Gained practical prototyping and teamwork experience through collaborative, hands-on design.</li>
             </ul>
 
             <h3 class="tight">Experience</h3>
-            <p class="line"><b>Office Assistant</b> — Northeastern University Department of Economics (Sep 2024 – Present)</p>
+            <p class="line"><b>Mechanical Engineer Co-op</b> — 10 Beauty, Burlington, MA (January to June 2026)</p>
             <ul class="bullets">
-              <li>Digitize and organize confidential student records in line with university standards.</li>
-              <li>Support daily operations: front desk assistance, visitor support, and inventory upkeep.</li>
+              <li>Prototyped components for a robotic manicure machine using SolidWorks, enhancing consistency and reliability.</li>
+              <li>Performed force and viscosity testing on material samples to inform design improvements for the next build iteration.</li>
             </ul>
 
-            <p class="line"><b>Volunteer, Coach & Player</b> — Umoja Outreach Foundation (Summers 2015 – Present)</p>
+            <p class="line"><b>Office Assistant</b> — Northeastern University Department of Economics, Boston, MA (September 2024 to Present)</p>
             <ul class="bullets">
-              <li>Coached two U12 girls’ soccer teams to the semifinals and supported 3,000-person events.</li>
-              <li>Coordinated logistics for opening/closing ceremonies and tournament operations.</li>
+              <li>Digitize and organize confidential student records, ensure accuracy, and comply with university data standards.</li>
+              <li>Support daily office operations by managing the front desk, assisting visitors, and maintaining inventory.</li>
             </ul>
-            
+
             <p class="line"><b>Design Intern</b> — Digitech Printers, East Meadow, NY (Summer 2023)</p>
             <ul class="bullets">
-              <li>Produced custom apparel designs for 7+ clients using heat press and vinyl.</li>
-              <li>Gained hands-on exposure to a professional design & production workflow.</li>
+              <li>Produced custom apparel designs for 7+ clients using heat press and vinyl application techniques.</li>
+              <li>Gained hands-on exposure to design workflow and production processes in a professional print environment.</li>
             </ul>
           </div>
 
@@ -195,18 +197,19 @@
               <span class="pill">C++</span>
               <span class="pill">HTML</span>
               <span class="pill">CSS</span>
+              <span class="pill">MATLAB</span>
               <span class="pill">SolidWorks</span>
               <span class="pill">Arduino</span>
-              <span class="pill">MATLAB</span>
               <span class="pill">3D Printing</span>
               <span class="pill">Laser Cutting</span>
+              <span class="pill">Microsoft Suite</span>
             </div>
 
             <h3 class="tight pad-top">Languages</h3>
             <div class="links">
               <span class="pill">English (native)</span>
               <span class="pill">Chinese (conversational)</span>
-              <span class="pill">Gujarati (conversational)</span>
+              <span class="pill">Gujarati (elementary)</span>
             </div>
 
             <h3 class="tight pad-top">Interests</h3>
@@ -215,12 +218,13 @@
               <span class="pill">Volleyball</span>
               <span class="pill">Soccer</span>
               <span class="pill">Pottery</span>
-              <span class="pill">Drawing</span>
             </div>
 
             <div class="resume-actions">
               <a class="btn" href="resume/Resume.pdf" download>Download Resume (PDF)</a>
+            </div>
           </div>
+        </div>
       </div>
     </section>
 
@@ -236,6 +240,7 @@
         </div>
       </div>
     </section>
+
     <footer>
       <div class="container">
         © <span id="year"></span> Sumaiya Dharsi • Boston, MA

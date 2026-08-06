@@ -4,18 +4,23 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Art Gallery — Sumaiya Dharsi</title>
+  <meta name="description" content="Pottery and crochet work by Sumaiya Dharsi" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="paintings-page">
+<body class="art-page">
   <header>
     <div class="container nav">
       <div class="logo">Sumaiya <b>Dharsi</b></div>
       <nav>
-        <a href="index.html#about">Home</a>
+        <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
-        <a href="paintings.html" class="active">Paintings</a>
-        <a href="art.html">Art</a>
+        <a href="paintings.html">Paintings</a>
+        <a href="art.html" class="active">Art</a>
+        <a href="index.html#resume">Resume</a>
         <a href="index.html#contact" class="btn nav-cta">Contact</a>
       </nav>
     </div>
@@ -23,29 +28,44 @@
 
   <main class="container">
     <section class="page-header">
-      <h1 class="section-title">Paintings</h1>
-      <p class="page-intro">A gallery of my painting work</p>
+      <h1 class="section-title">Art Gallery</h1>
+      <p class="page-intro">Pottery, crochet, and other things I make by hand.</p>
     </section>
 
     <!-- GALLERY -->
     <section class="paintings-masonry">
-   <div class="masonry-column"> 
+      <div class="masonry-column">
 
-    <a href="ZanzibarDoor.html" class="painting-item">
-    <img src="Pics/Zanzibar door.jpg">
-    <div class= "painting-overlay">
-      <span> Zanzibar Door - 2024 </span>
-    </div>
-  </a>
- 
-    <img src="Pics/Go where the light is.jpg">
-    <img src="Pics/from-sea-to-shinning-sea.jpg">
-    <img src="Pics/Mosque.jpg">
-    <img src="Pics/Montauk Sunset.jpg" >
-    <img src="Pics/Shakespeare Garden.jpg">
-    <img src="Pics/safari sunset.jpg">
+        <!-- ============================================================
+             ADD ARTWORK HERE.
 
+             1) Drop the photo into the Pics folder.
+             2) Copy ONE of the two blocks below and paste it inside this
+                <div class="masonry-column">, then update the file name.
+             3) Delete the "gallery-empty" note further down once you have
+                a few pieces in.
+
+             Plain image (no click-through):
+
+               <img src="Pics/YourPhoto.jpg" alt="Short description">
+
+             Image with hover title (and an optional detail page):
+
+               <a href="#" class="painting-item">
+                 <img src="Pics/YourPhoto.jpg" alt="Short description">
+                 <div class="painting-overlay">
+                   <span>Piece Name - 2026</span>
+                 </div>
+               </a>
+
+             The columns fill themselves in — you do not need to balance
+             them by hand. Any mix of tall and wide photos works.
+             ============================================================ -->
+
+      </div>
     </section>
+
+    <p class="gallery-empty">Pottery and crochet pieces coming soon.</p>
   </main>
 </body>
 </html>

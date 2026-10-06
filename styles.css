@@ -258,10 +258,21 @@ h2{
   margin:0; position:relative; aspect-ratio:3 / 2; /* all equal height */
   border-radius:8px; overflow:hidden; background:#F3E4DA; /* no border */
 }
-.project-gallery.gallery-row4 img{
+.project-gallery.gallery-row4 img,
+.project-gallery.gallery-row4 video{
   position:absolute; inset:0; width:100%; height:100%;
   object-fit:cover; object-position:center;
 }
+/* square tiles for galleries with tall phone photos */
+.project-gallery.gallery-row4.gallery-square figure{ aspect-ratio:1 / 1 }
+.project-gallery.gallery-row4 img.pos-bottom{ object-position:center bottom }
+
+/* MatchaBot per-photo framing */
+.project-gallery.gallery-row4 img.mb3{ object-position:62% center }   /* keep right edge of model in frame */
+.project-gallery.gallery-row4 img.mb4{ transform:scale(1.5); transform-origin:37% 38% }  /* zoom on microcontroller */
+.project-gallery.gallery-row4 img.mb5{ transform:scale(1.5); transform-origin:50% 38% }  /* zoom on boards */
+.project-gallery.gallery-row4 img.mb6{ object-position:center 80%; transform:rotate(3deg) scale(.97) translateY(3%) }  /* straighten, zoom out slightly, shift down */
+.project-gallery.gallery-row4 video.mbvid{ transform:translateX(-30px) rotate(4deg) scale(2.5) }  /* zoom in to match old clip; straighten */
 
 /* (optional) tighten padding inside each bubble a touch */
 .projects .card.pad { padding: 22px; }
@@ -311,6 +322,8 @@ h2{
 .res-date{ font-size:.78rem; color:var(--muted); font-weight:600; white-space:nowrap; flex:0 0 auto }
 .res-org{ font-size:.88rem; color:var(--brand); font-weight:600; margin:1px 0 4px }
 .res-desc{ font-size:.88rem; color:var(--muted); margin:0 }
+ul.res-desc{ padding-left:1.1em }
+ul.res-desc li + li{ margin-top:4px }
 
 /* pins the projects button to the bottom so both columns finish level */
 .res-col-cta{ margin-top:auto; padding-top:18px }
